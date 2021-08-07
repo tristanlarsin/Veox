@@ -1,6 +1,5 @@
 package io.tristanlarsin.veox.presentation.splash
 
-import android.graphics.fonts.FontStyle
 import android.view.animation.OvershootInterpolator
 import androidx.compose.animation.core.Animatable
 import androidx.compose.animation.core.tween
@@ -14,13 +13,12 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.scale
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
-import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import io.tristanlarsin.veox.R
 import io.tristanlarsin.veox.presentation.util.Screen
 import io.tristanlarsin.veox.util.Constants
+import io.tristanlarsin.veox.util.navigate
 import kotlinx.coroutines.delay
 
 @Composable
@@ -47,7 +45,10 @@ fun SplashScreen(
         )
 
         delay(Constants.SPLASH_SCREEN_DURATION)
-        navController.navigate(Screen.LoginScreen.route)
+        navController.navigate(
+            route = Screen.LoginScreen.route,
+            popBackStack = true
+        )
     }
 
     Box(
