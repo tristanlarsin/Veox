@@ -2,5 +2,6 @@ package io.tristanlarsin.veox.util
 
 object Constants {
 
-    const val SPLASH_SCREEN_DURATION = 1500L
+    // TODO (Tristan) - Undo
+    const val SPLASH_SCREEN_DURATION = 0L //1500L
 }

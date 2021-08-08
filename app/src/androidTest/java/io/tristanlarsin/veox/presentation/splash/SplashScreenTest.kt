@@ -30,6 +30,7 @@ class SplashScreenTest {
         MockKAnnotations.init(this)
     }
 
+    // TODO (Tristan) - Fix delay issue
     @Test
     fun splashScreen_displayAndDisappears() = runBlockingTest {
         composeTestRule.setContent { 

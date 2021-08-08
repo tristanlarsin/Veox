@@ -5,6 +5,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import io.tristanlarsin.veox.presentation.login.LoginScreen
+import io.tristanlarsin.veox.presentation.main.MainScreen
 import io.tristanlarsin.veox.presentation.splash.SplashScreen
 
 @Composable
@@ -22,7 +23,7 @@ fun Navigation() {
             LoginScreen(navController = navController)
         }
         composable(Screen.MainScreen.route) {
-
+            MainScreen(navController = navController)
         }
     }
 }
