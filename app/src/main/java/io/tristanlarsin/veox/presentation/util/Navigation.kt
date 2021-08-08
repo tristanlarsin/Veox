@@ -11,7 +11,7 @@ import io.tristanlarsin.veox.presentation.splash.SplashScreen
 @Composable
 fun Navigation() {
     val navController = rememberNavController()
-    
+
     NavHost(
         navController = navController,
         startDestination = Screen.MainScreen.route // TODO (Tristan) - Undo
