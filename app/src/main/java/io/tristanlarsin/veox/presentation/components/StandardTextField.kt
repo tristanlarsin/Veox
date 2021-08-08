@@ -25,7 +25,7 @@ const val TEST_TAG = "standard_text_field"
 
 @Composable
 fun StandardTextField(
-    modifier: Modifier = Modifier.fillMaxWidth(),
+    modifier: Modifier = Modifier,
     text: String = "",
     hint: String = "",
     maxLength: Int = 40,
@@ -83,6 +83,6 @@ fun StandardTextField(
                 }
             }
         },
-        modifier = modifier.testTag(TEST_TAG)
+        modifier = modifier.fillMaxWidth().testTag(TEST_TAG)
     )
 }

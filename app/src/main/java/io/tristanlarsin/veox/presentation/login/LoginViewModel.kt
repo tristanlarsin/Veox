@@ -15,11 +15,24 @@ class LoginViewModel @Inject constructor() : ViewModel() {
     private val _passwordText = mutableStateOf("")
     val passwordText: State<String> = _passwordText
 
+    private val _isButtonEnabled = mutableStateOf(false)
+    val isButtonEnabled: State<Boolean> = _isButtonEnabled
+
     fun setEmailText(email: String) {
         _emailText.value = email
+        updateButtonState()
     }
 
     fun setPasswordText(password: String) {
         _passwordText.value = password
+        updateButtonState()
+    }
+
+    private fun updateButtonState() {
+        _isButtonEnabled.value = emailText.value.isNotBlank() && passwordText.value.isNotBlank()
+    }
+
+    fun login() {
+        // TODO (Tristan) -
     }
 }
