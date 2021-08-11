@@ -1,5 +1,6 @@
 package io.tristanlarsin.veox.presentation.util
 
+import androidx.compose.material.ExperimentalMaterialApi
 import androidx.compose.runtime.Composable
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
@@ -8,6 +9,7 @@ import io.tristanlarsin.veox.presentation.login.LoginScreen
 import io.tristanlarsin.veox.presentation.main.MainScreen
 import io.tristanlarsin.veox.presentation.splash.SplashScreen
 
+@ExperimentalMaterialApi
 @Composable
 fun Navigation() {
     val navController = rememberNavController()

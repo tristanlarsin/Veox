@@ -9,4 +9,7 @@
     <string name="sign_up">Sign up!</string>
     <string name="log_in">Log in</string>
     <string name="screen_main_title">Main Screen</string>
+    <string name="fab_content_description">Create task</string>
+    <string name="enter_todo">Enter task</string>
+    <string name="new_todo">Create new task</string>
 </resources>
